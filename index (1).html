@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haura | The Pashmina Collection</title>
+<meta name="description" content="Haura. Timeless Beauty · Elevated. The Pashmina Collection, crafted from premium fabric. Opening soon.">
+<meta property="og:title" content="Haura | The Pashmina Collection">
+<meta property="og:description" content="Premium fabric, softly draped. Opening soon.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2334231F'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-size='40' fill='%23C9A66B'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --choc:#2A1A16; --choc-2:#4B3229; --mocha:#A98965; --gold:#C9A66B; --gold-hi:#E6C98F;
+  --cream:#F3EADB; --beige:#D9C6A8; --ink:#34231F;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Jost','Helvetica Neue',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-weight:300;color:var(--ink);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:4px}
+
+/* header */
+header{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:28px clamp(20px,5vw,64px)}
+.brand{font-family:var(--serif);font-size:1.7rem;letter-spacing:.42em;color:var(--gold);text-decoration:none;font-weight:500}
+.nav-link{font-size:.9rem;letter-spacing:.08em;color:var(--beige);text-decoration:none;border-bottom:1px solid rgba(201,166,107,.5);padding-bottom:3px}
+.nav-link:hover{color:var(--gold-hi)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;background:radial-gradient(120% 90% at 50% 38%,var(--choc-2) 0%,var(--choc) 70%);color:var(--cream);display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 24px 220px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:22px;border:1px solid rgba(201,166,107,.55);pointer-events:none}
+.hero::after{content:"";position:absolute;inset:34px;border:1px solid rgba(201,166,107,.22);pointer-events:none}
+.hero-inner{position:relative;z-index:2;max-width:760px}
+.hero p.lead{font-size:1.05rem;color:var(--beige);letter-spacing:.06em;margin-bottom:18px}
+h1{font-family:var(--serif);font-weight:400;font-style:italic;font-size:clamp(3.2rem,10vw,7rem);line-height:1;background:linear-gradient(120deg,#8E6B3A 0%,var(--gold-hi) 35%,var(--gold) 60%,#8E6B3A 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
+h1 span{display:block;font-style:normal;font-size:.36em;letter-spacing:.42em;margin-top:.5em;font-weight:500}
+.hero p.sub{font-family:var(--serif);font-size:clamp(1.25rem,2.6vw,1.6rem);font-style:italic;color:var(--beige);margin:34px auto 40px;max-width:30ch}
+.actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 30px;font-family:var(--sans);font-size:.95rem;letter-spacing:.06em;text-decoration:none;border:1px solid var(--gold);transition:background .25s,color .25s}
+.btn.solid{background:var(--gold);color:var(--choc);font-weight:400}
+.btn.solid:hover{background:var(--gold-hi)}
+.btn.ghost{color:var(--gold)}
+.btn.ghost:hover{background:rgba(201,166,107,.14)}
+.silk{position:absolute;left:0;right:0;bottom:0;width:100%;height:230px;z-index:1;opacity:.9}
+.silk path{fill:none;stroke:var(--gold);stroke-width:1.2}
+.silk g{animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-30px)}to{transform:translateX(30px)}}
+
+/* about */
+section{padding:clamp(72px,11vw,150px) clamp(22px,6vw,80px)}
+.wrap{max-width:1040px;margin:0 auto}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.12;max-width:16ch;margin-bottom:28px}
+.intro{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,6vw,90px);align-items:start}
+.intro p{font-size:1.08rem;max-width:46ch;color:#5a4238}
+.qualities{list-style:none;margin-top:clamp(56px,8vw,96px);border-top:1px solid var(--mocha)}
+.qualities li{display:grid;grid-template-columns:minmax(150px,.7fr) 2fr;gap:24px;padding:30px 0;border-bottom:1px solid rgba(169,137,101,.45)}
+.qualities h3{font-family:var(--serif);font-size:1.7rem;font-weight:500}
+.qualities p{max-width:52ch;color:#5a4238}
+
+/* closing */
+.closing{background:var(--choc);color:var(--cream);text-align:center}
+.closing h2{margin:0 auto 22px;max-width:18ch;color:var(--gold-hi)}
+.closing p{max-width:44ch;margin:0 auto 38px;color:var(--beige)}
+.orn{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:34px;color:var(--gold)}
+.orn i{display:block;width:90px;height:1px;background:var(--gold)}
+.orn b{width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+
+footer{background:var(--deep,#241714);color:var(--beige);padding:44px 24px;text-align:center;font-size:.9rem}
+footer .brand{display:inline-block;font-size:1.4rem;margin-bottom:10px}
+footer nav{display:flex;gap:26px;justify-content:center;margin:14px 0 18px}
+footer nav a{text-decoration:none;border-bottom:1px solid rgba(201,166,107,.4);padding-bottom:2px}
+footer nav a:hover{color:var(--gold-hi)}
+footer small{display:block;color:var(--mocha);font-size:.8rem}
+
+@media (max-width:760px){
+  .intro{grid-template-columns:1fr}
+  .qualities li{grid-template-columns:1fr;gap:8px}
+  .brand{font-size:1.4rem}
+  .hero::before{inset:12px}.hero::after{inset:22px}
+}
+@media (prefers-reduced-motion:reduce){.silk g{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#top" aria-label="Haura">HAURA</a>
+  <!-- GANTI 6281234567890 dengan nomor WhatsApp Anda (format 62, tanpa 0 / +) -->
+  <a class="nav-link" href="https://wa.me/6281234567890?text=Hello%20Haura%2C%20I%20would%20like%20to%20know%20more%20about%20the%20Pashmina%20Collection." target="_blank" rel="noopener">WhatsApp</a>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="hero-inner">
+      <p class="lead">Introducing</p>
+      <h1>The Pashmina<span>COLLECTION</span></h1>
+      <p class="sub">Premium fabric, softly draped. Opening soon.</p>
+      <div class="actions">
+        <a class="btn solid" href="https://wa.me/6281234567890?text=Hello%20Haura%2C%20I%20would%20like%20to%20know%20more%20about%20the%20Pashmina%20Collection." target="_blank" rel="noopener">Message us on WhatsApp</a>
+        <a class="btn ghost" href="https://instagram.com/haura.id" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+    </div>
+    <svg class="silk" viewBox="0 0 1440 230" preserveAspectRatio="none" aria-hidden="true">
+      <g>
+        <path d="M-60 120 C 200 60, 420 180, 720 120 S 1240 60, 1500 130" opacity=".70"/>
+        <path d="M-60 136 C 200 76, 420 196, 720 136 S 1240 76, 1500 146" opacity=".58"/>
+        <path d="M-60 152 C 200 92, 420 212, 720 152 S 1240 92, 1500 162" opacity=".46"/>
+        <path d="M-60 168 C 200 108, 420 228, 720 168 S 1240 108, 1500 178" opacity=".36"/>
+        <path d="M-60 184 C 200 124, 420 244, 720 184 S 1240 124, 1500 194" opacity=".26"/>
+        <path d="M-60 200 C 200 140, 420 260, 720 200 S 1240 140, 1500 210" opacity=".18"/>
+      </g>
+    </svg>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="intro">
+        <h2>Made to be worn for years, not seasons.</h2>
+        <p>Haura begins with the belief that beauty should last. The Pashmina Collection is crafted from quality fabric, chosen for how it feels against the skin and how gracefully it falls, then finished with the same care we give to every box we send.</p>
+      </div>
+      <ul class="qualities">
+        <li><h3>Premium fabric</h3><p>Quality material selected for softness, comfort, and lasting wear.</p></li>
+        <li><h3>A graceful drape</h3><p>Falls lightly and holds its shape, so it looks refined from morning to evening.</p></li>
+        <li><h3>Packed with care</h3><p>Every order arrives in Haura packaging, wrapped and sealed to feel like a gift.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <div class="orn" aria-hidden="true"><i></i><b></b><i></i></div>
+      <h2>Be the first to wear it.</h2>
+      <p>Send us a message to hear when the collection opens, and to reserve your pashmina.</p>
+      <a class="btn solid" href="https://wa.me/6281234567890?text=Hello%20Haura%2C%20please%20let%20me%20know%20when%20the%20Pashmina%20Collection%20opens." target="_blank" rel="noopener">Reserve on WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a class="brand" href="#top">HAURA</a>
+  <div>Timeless Beauty · Elevated</div>
+  <nav aria-label="Social media">
+    <a href="https://instagram.com/haura.id" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@haura.id" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+  <small>&copy; 2026 Haura. All rights reserved.</small>
+</footer>
+
+</body>
+</html>
